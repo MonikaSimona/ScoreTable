@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  background-color: #0D065A;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.summary {
+  width: 500px;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-all-button {
+  height: 40px;
+  width: 141px;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  background: #E32D2D;
+}
+
+.player-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100%;
+}
+body, html, .App, #root{
+  height: 100%;
+}
+.player-list-bg{
+  overflow: auto;
+  height: 100%;
+  bottom: 0;
+  background-color: rgba(13, 6, 90, 0.05);
+}
+
+.player-card {
+  margin: 10px;
+  border: 1px solid #0D065A;
+  border-radius: 5px;
+  width: 500px;
+  height: 223px;
+  padding: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  background-color: white;
+}
+
+.red-delete {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: #E32D2D;
+}
+
+.player-name {
+  height: 34px;
+  width: 100%;
+  border-radius: nullpx;
+  border: 0;
+  background-color: transparent;
+  color: #0D065A;
+}
+
+.player-name-line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.score-number {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.refr {
+  padding: 0;
+}
+
+.refresh-button {
+  display: inline-block;
+  height: 9.000003814697266px;
+  width: 9.000003814697266px;
+  border-radius: 0px;
+}
+
+.refresh {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: #414FCE;
+}
+
+.card-button {
+  height: 28px;
+  width: 134px;
+  background: #D9FFCF;
+  border: 1px solid #73C57C;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0D065A;
+}
+
+.sign {
+  line-height: 19px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.inc {
+  background: #D9FFCF;
+  border: 1px solid #73C57C;
+}
+
+.dec {
+  background: #FFCFD8;
+  border: 1px solid #C573A9;
+}
+
+.player-photo {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.add-player-button {
+  background: #BB691E;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 51px;
+  width: 198px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  color: #0D065A;
 }
