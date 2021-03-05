@@ -6,8 +6,8 @@ export default function SummarySection({deleteAll , numberPlayers}) {
         <div className="summary">
         <div className='container p-0 mt-4  '>
             <div className="row  ">
-                <div className="col d-flex justify-content-start ">Total players {numberPlayers}</div>
-                <div className="col d-flex justify-content-end align-items-center  ">
+                <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-lg-start align-items-lg-center align-items-md-center align-items-sm-center justify-content-center ">Total players: {numberPlayers}</div>
+                <div className="col-lg-6 col-md-6 col-12 d-flex justify-content-lg-end align-items-lg-center align-items-md-center align-items-sm-center justify-content-center my-2 ">
                     <button className='delete-all-button ' onClick={deleteAll}> <RiDeleteBin6Line className='mb-1 mr-1'/> Delete All</button>
                 </div>
             </div>
